@@ -1,0 +1,27 @@
+allprojects {
+    //apply plugin: 'java'
+    apply plugin: 'idea'
+
+    tasks.withType(JavaCompile) {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    group = 'com.jpoint'
+    version = '1.0'
+}
+
+subprojects {
+    ext {
+        springBootVersion = '2.0.1.RELEASE'
+        lombokVersion = '1.16.20'
+        springVersion='5.0.4.RELEASE'
+        springIntegrationVersion = '5.0.3.RELEASE'
+        hibernateValidatorVersion = "6.0.9.Final"
+        junitPlatformVersion = '1.1.0'
+        junit4Version = '4.12'
+        junitVintageVersion = '4.12.1'
+        junitJupiterVersion = '5.1.1'
+        springSessionCore = '2.0.2.RELEASE'
+    }
+}
