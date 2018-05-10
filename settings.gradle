@@ -1,4 +1,5 @@
 rootProject.name = 'jpoint'
 
 include 'starter'
+include 'iron-starter'
 
