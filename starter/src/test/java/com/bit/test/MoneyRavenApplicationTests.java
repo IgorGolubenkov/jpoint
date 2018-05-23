@@ -23,13 +23,6 @@ public class MoneyRavenApplicationTests {
     @Autowired
     ProphetProperties prophetProperties;
 
-    private static DatabaseMetaData databaseMetaData;
-
-    @BeforeAll
-    static void setUp() {
-        databaseMetaData = mock(DatabaseMetaData.class);
-    }
-
     @Test
     void contextLoads() {
         assert prophetProperties.getThoseWhoReturnDebts().contains("Lanister");
