@@ -1,6 +1,7 @@
 spring:
   application.name: money-raven
   jpa.hibernate.ddl-auto: validate
+
 ironbank:
   those-who-return-debts:
     -Lanister

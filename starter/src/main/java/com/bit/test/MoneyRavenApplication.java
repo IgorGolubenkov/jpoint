@@ -1,6 +1,6 @@
 package com.bit.test;
 
-import com.bit.test.config.ProphetProperties;
+import com.bit.test.model.ProphetProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
