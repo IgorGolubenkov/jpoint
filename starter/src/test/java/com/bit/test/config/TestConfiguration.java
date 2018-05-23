@@ -22,7 +22,9 @@ public class TestConfiguration {
         //Arrange
         HikariDataSource defaultDataSource = mock(HikariDataSource.class);
         Connection connection = mock(Connection.class);
+        mock(DatabaseMetaData.class);
         when(defaultDataSource.getConnection()).thenReturn(connection);
+        when(connection.getMetaData())
         return defaultDataSource;
     }
 

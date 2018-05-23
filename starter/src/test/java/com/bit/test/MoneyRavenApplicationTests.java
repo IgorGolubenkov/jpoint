@@ -3,7 +3,6 @@ package com.bit.test;
 import com.bit.test.config.TestConfiguration;
 import com.bit.test.model.ProphetProperties;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.platform.runner.JUnitPlatform;
@@ -24,10 +23,10 @@ public class MoneyRavenApplicationTests {
     @Autowired
     ProphetProperties prophetProperties;
 
-    private DatabaseMetaData databaseMetaData;
+    private static DatabaseMetaData databaseMetaData;
 
-    @BeforeEach
-    void setUp() {
+    @BeforeAll
+    static void setUp() {
         databaseMetaData = mock(DatabaseMetaData.class);
     }
 
