@@ -35,27 +35,27 @@ public class TestConfiguration {
         return defaultDataSource;
     }
 
-    @Primary
-    @Bean
-    public EntityManagerFactory entityManagerFactory() {
-        return mock(EntityManagerFactory.class);
-    }
-
-    @Primary
-    @Bean("transferMoneyServiceImpl")
-    public TransferMoneyService transferMoneyService() {
-        return mock(TransferMoneyService.class);
-    }
-
-    @Primary
-    @Bean
-    public MoneyRepository moneyRepository() {
-        return mock(MoneyRepository.class);
-    }
-
-    @Primary
-    @Bean
-    public IronBankController ironBankController() {
-        return mock(IronBankController.class);
-    }
+//    @Primary
+//    @Bean
+//    public EntityManagerFactory entityManagerFactory() {
+//        return mock(EntityManagerFactory.class);
+//    }
+//
+//    @Primary
+//    @Bean("transferMoneyServiceImpl")
+//    public TransferMoneyService transferMoneyService() {
+//        return mock(TransferMoneyService.class);
+//    }
+//
+//    @Primary
+//    @Bean
+//    public MoneyRepository moneyRepository() {
+//        return mock(MoneyRepository.class);
+//    }
+//
+//    @Primary
+//    @Bean
+//    public IronBankController ironBankController() {
+//        return mock(IronBankController.class);
+//    }
 }
